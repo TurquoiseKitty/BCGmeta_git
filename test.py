@@ -7,7 +7,6 @@ import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
 from train import accuracy, KL_loss
-import sklearn
 from gen_models.MC import MC
 
 

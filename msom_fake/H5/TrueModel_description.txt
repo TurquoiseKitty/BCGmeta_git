@@ -1,2 +1,0 @@
-model type : MC
-product number : 7
