@@ -1,0 +1,52 @@
+model_params:
+  model_seed: 1234
+  name: 'ResAssortNN'
+  Nprod_Veclen: 7
+
+  Num_resBlock: 1
+  Num_res_neckLayer: 0
+  res_neckLayers: []
+
+
+
+data_params:
+  data_seed: 1234
+
+  data_path: "msom/H5"
+
+  Assortments: "ASSORT.npy"
+  Final_choices: "SAMP.npy"
+
+
+  train_amount: 800
+
+  valid_amount: 100
+  
+  test_amount: 100
+
+  device: "gpu"
+
+
+exp_params:
+  exp_seed: 1234
+
+
+  train_batch_size: 5
+  valid_batch_size: 100
+  LR: 0.0001
+  weight_decay: 0.0
+  scheduler_gamma: 1
+
+  device: "gpu"
+  max_epochs: 200
+
+
+logging_params:
+
+  log_name: "Res5"
+
+  log_save_perEpoch: 50
+
+  log_save_stack: 4
+
+

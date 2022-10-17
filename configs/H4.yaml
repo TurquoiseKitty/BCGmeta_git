@@ -1,0 +1,53 @@
+model_params:
+  model_seed: 1234
+  name: 'AssortmentNN'
+  Nprod_Veclen: 8
+
+  Num_CrossEffectLayer: 1
+  Cross_midLayers: [8]
+
+
+
+data_params:
+  data_seed: 1234
+
+  data_path: "msom/H4"
+
+  Assortments: "ASSORT.npy"
+  Final_choices: "SAMP.npy"
+
+
+  train_amount: 900
+
+  valid_amount: 100
+  
+  test_amount: 200
+
+  device: "gpu"
+
+
+exp_params:
+  exp_seed: 1234
+
+
+  train_batch_size: 5
+  valid_batch_size: 100
+  LR: 0.0005
+  weight_decay: 0.0
+  scheduler_gamma: 1
+
+  device: "gpu"
+  max_epochs: 200
+
+
+logging_params:
+
+  log_name: "H4"
+
+  log_save_perEpoch: 20
+
+  log_save_stack: 4
+
+
+
+

@@ -1,0 +1,55 @@
+model_params:
+  model_seed: 1234
+  name: 'AssortmentNN'
+  Nprod_Veclen: 17
+
+  Num_CrossEffectLayer: 2
+  Cross_midLayers: [10, 17]
+
+
+
+
+
+data_params:
+  data_seed: 1234
+
+  data_path: "msom/H3"
+
+  Assortments: "ASSORT.npy"
+  Final_choices: "SAMP.npy"
+
+
+  train_amount: 4000
+
+  valid_amount: 1000
+  
+  test_amount: 1000
+
+  device: "gpu"
+
+
+
+
+exp_params:
+  exp_seed: 1234
+
+
+  train_batch_size: 20
+  valid_batch_size: 1000
+  LR: 0.0005
+  weight_decay: 0.0
+  scheduler_gamma: 1
+
+  device: "gpu"
+  max_epochs: 50
+
+
+logging_params:
+
+  log_name: "H3"
+
+  log_save_perEpoch: 20
+
+  log_save_stack: 4
+
+

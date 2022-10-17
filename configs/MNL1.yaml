@@ -1,0 +1,48 @@
+model_params:
+  model_seed: 1234
+  name: 'VanillaMNL'
+  Nprod_Veclen: 12
+
+
+
+
+
+data_params:
+  data_seed: 1234
+
+  data_path: "msom/H1"
+
+  Assortments: "ASSORT.npy"
+  Final_choices: "SAMP.npy"
+
+
+  train_amount: 6000
+
+  valid_amount: 1000
+  
+  test_amount: 1000
+
+  device: "gpu"
+
+
+exp_params:
+  exp_seed: 1234
+
+
+  train_batch_size: 5
+  valid_batch_size: 1000
+  LR: 0.0005
+  weight_decay: 0.0
+  scheduler_gamma: 1
+
+  device: "gpu"
+  max_epochs: 20
+
+
+logging_params:
+
+  log_name: "MNL1"
+
+  log_save_perEpoch: 20
+
+  log_save_stack: 4
